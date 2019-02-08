@@ -1,0 +1,143 @@
+/*input flexing*/
+.container {
+  max-width: 1400px;
+  margin: 10px auto auto;
+  border: #333 solid 10px;
+  padding: 10px;
+  background-color: #FFF;
+}
+.form-row {
+  padding: 10px 0;
+  display: flex;
+}
+.form-row label {
+  padding-right: 10px;
+}
+.form-row input {
+  flex: 1;
+}
+.form-Input {
+  padding: 10px 0;
+  display: flex;
+}
+.form-Input label {
+  padding-right: 10px;
+}
+.form-Input input {
+  flex: 1;
+}
+
+/* column fexing*/
+.column-container {
+  max-width: 1400px;
+  margin: 10px auto auto;
+  border: #333 solid 10px;
+  background-color: rgb(102, 98, 98);
+  padding: 10px;
+  display:flex;
+}
+.main {
+  flex: 3;
+  order: 2;
+}
+.side1 {
+  flex: 1;
+  order: 1;
+}
+.side2 {
+  flex: 1;
+  order: 3;
+}
+
+/*message box*/
+.box:nth-child(1){background-color: #c0dbe2;}
+.box:nth-child(2){background-color: #cdf1c3;}
+.box:nth-child(3){background-color: #ccb9da;}
+
+.message-box {
+  max-width: 1400px;
+  margin: 10px auto auto;
+  border: #333 solid 10px;
+  padding: 10px;
+  display: flex;
+  /*align-items: flex-start; /*arrange automaticly as per content*/*/
+  justify-content: space-between;
+}
+.box {
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  flex:1;
+  box-sizing: border-box;
+}
+
+@media (min-width :900px) {
+  display: flex;
+  /*align-items: flex-start; /*arrange automaticly as per content*/*/
+  justify-content: space-between;
+}
+
+/*box container size*/
+.fixed-container {
+  max-width: 1400px;
+  margin: 10px auto auto;
+  border: #333 solid 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.boxsize {
+  width: 150px;
+  height: 100px;
+  background-color: #990b47;
+  color: #FFF;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  margin: 20px 20px;
+
+}
+
+/*centering item*/
+.banner {
+  max-width: 400px;
+  margin: 10px auto auto;
+  border: #333 solid 10px;
+  padding: 10px;
+  background-color: #333;
+  display: flex;
+  text-decoration-color: #f4f4f4;
+}
+.center-me {
+  color: #fff;
+  font-size: 50px;
+  margin: auto;
+}
+/*align row wise */
+.row-container {
+  max-width: 800px;
+  margin: 10px auto auto;
+  border: #333 solid 10px;
+  padding: 10px;
+  display: flex;
+}
+.first {
+  background-color: #123;
+  flex:1;
+}
+.second {
+  background-color: #456;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+.second-a {
+  background-color: #789;
+  flex:1;
+}
+.second-b {
+  background-color: #777;
+  flex:1;
+}

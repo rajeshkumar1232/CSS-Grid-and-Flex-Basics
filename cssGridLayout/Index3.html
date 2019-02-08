@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS grid 2</title>
+    <style>
+      .wrapper{
+        display:grid;
+        grid-gap:1em;
+        grid-template-columns:1fr 2fr 3fr;
+        /*grid-template-columns:repeat(4, 1fr);*/
+        /*grid-auto-rows: 100px;*/
+        grid-auto-rows:minmax(100px,auto);
+        justify-items:stretch;
+        align-items:center;
+      }
+      .wrapper > div{
+        background: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-child(even){
+        background: #ddd;
+      }
+      .box1{
+        /*align-self:start;*/
+        grid-column:1/3;
+        grid-row:1/3;
+      }
+      .box1{
+        /*align-self:end;*/
+        grid-column:3;
+        grid-row:1/3
+      }
+      .box1{
+        /*align-self:start;*/
+      }
+      .box1{
+        /*align-self:end;*/
+      }
+    </style>
+  </head>
+  <body>
+      <div class="wrapper">
+        <div class="box1"> Box1 </div>
+        <div class="box2"> Box2 </div>
+        <div class="box3"> Box3 </div>
+        <div class="box4"> Box4 </div>
+      </div>
+  </body>
+</html>
